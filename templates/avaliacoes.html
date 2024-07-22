@@ -9,7 +9,13 @@
         {% for d in dados %}
             <tr>
                 <td>{{d.cliente}}</td>
-                <td>{{d.nota}}</td>
+                <td>
+
+                    {% for i in range(d.nota) %}
+                    * 
+                    {% endfor %}
+                
+                </td>
             </tr>
         {% endfor %}
     </table>
