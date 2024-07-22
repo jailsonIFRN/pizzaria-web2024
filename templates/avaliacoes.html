@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+    <table border="1">
+        <tr>
+            <th>Cliente</th>
+            <th>Nota</th>
+        </tr>
+        {% for d in dados %}
+            <tr>
+                <td>{{d.cliente}}</td>
+                <td>{{d.nota}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock%}
