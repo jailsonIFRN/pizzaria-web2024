@@ -17,3 +17,7 @@ def avaliacoes():
              {'cliente': 'João', 'nota': 2}
             ]
     return render_template('avaliacoes.html', dados=dados)
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
